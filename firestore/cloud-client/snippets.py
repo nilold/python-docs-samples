@@ -57,7 +57,7 @@ def quickstart_add_data_two():
 def quickstart_get_collection():
     db = firestore.Client()
     # [START quickstart_get_collection]
-    users_ref = db.collection(u'users')
+    users_ref = db.collection(u'users').
     docs = users_ref.stream()
 
     for doc in docs:
